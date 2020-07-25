@@ -83,17 +83,34 @@
     </div>
   </section>
   <section class="booking">
-    <div class="wrapper-content">
-      <main class="section-main">
-        <aside class="main__desc">
-          <h2>Book a table</h2>
-            
-        </aside>
-        <div class="image-block">
-          <div class="image"></div>
-          <div class="image-block__rect"></div>
-        </div>
-      </main>
+    <main class="booking__main section-main">
+      <aside class="booking__desc main__desc">
+          <form action="#" class="booking__form">
+            <h2>Book a table</h2>
+            <div class="form__columns">
+              <div class="form__column">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Date (mm/dd)">
+              </div>
+              <div class="form__column">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="People">
+                <input type="text" placeholder="Time">
+              </div>
+            </div>            
+            <input type="submit" value="Book now">
+          </form>
+      </aside>
+      <div class="image-block">
+        <div class="booking__image image"></div>
+        <div class="image-block__rect"></div>
+      </div>
+    </main>
+    <div class="booking__footer">
+      Mon - Fri:<span>&nbsp; 8PM - 10PM</span>, 
+      Sat - Sun:<span>&nbsp; 8PM - 3AM</span>, 
+      Phone: <span>&nbsp; +40 729 131 637/+40 726 458 782</span>
     </div>
   </section>
 </body>
