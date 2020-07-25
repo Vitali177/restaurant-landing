@@ -8,7 +8,7 @@
     src: url('../fonts/Banny-BoldRound.otf') format('truetype');
 }
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -21,6 +21,8 @@ header {
     height: 100vh;
     background: url("../img/header-bg.jpg") 100% 100% no-repeat no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -75,15 +77,17 @@ nav {
 }
 
 .header__main {
-    height: 250px;
+    position: relative;
+    flex: 1;
     width: 100%;
-    margin-top: 225px;
     display: flex;
     justify-content: space-between;
 }
 
 .header__date {
-    width: 60px;
+    width: 215px;
+    padding: 225px 0 0 80px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header__date-text {
@@ -100,10 +104,23 @@ nav {
 }
 
 .header__title {
+    position: relative;
     height: 100%;
+    padding: 225px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.header__title::before {
+    content: "";
+    position: absolute;
+    bottom: 365px;
+    left: 163px;
+    width: 455px;
+    height: 1px;
+    transform: rotate(90deg);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .header__title h3 {
@@ -140,9 +157,13 @@ nav {
 
 .header__icons {
     height: 100%;
+    width: 215px;
+    padding: 225px 80px 225px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-end;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header__icon {
@@ -204,6 +225,30 @@ nav {
 .header__button:hover {
     transition: background-color .3s ease-in-out;
     background-color: #E8C300;
+}
+
+.down-btn {
+    position: absolute;
+    bottom: 90px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.down-btn::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: url("../img/arrow.svg") 50% 50% no-repeat no-repeat;
 }
 
 /* About us */
@@ -347,4 +392,6 @@ nav {
 .team__rect {
     left: 0;
 }
+
+/* Booking */
 
