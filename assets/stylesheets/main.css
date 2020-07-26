@@ -707,3 +707,65 @@ nav {
     background: url("../img/photo-gallery4.jpg") 100% 100% no-repeat no-repeat;
     background-size: cover;
 }
+
+/* Contact */
+
+.contact {
+    width: 100%;
+    height: 647px;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form {
+    margin-top: 50px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact__form input[type="text"] {
+    margin: 0;
+    width: 420px;
+    height: 60px;
+}
+
+.contact__form textarea {
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    background: #E5E5E5;
+    color: rgba(51, 51, 51, 0.5);
+    border: 0;
+    border-radius: 5px;
+}
+
+.contact__form input[type="submit"] {
+    width: 640px;
+    height: 60px;
+}
+
+.contacts {
+    width: 640px;
+    height: 60px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(51, 51, 51, 0.5);
+}
