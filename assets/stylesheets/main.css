@@ -8,6 +8,10 @@
     src: url('../fonts/Banny-BoldRound.otf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
     padding: 0;
